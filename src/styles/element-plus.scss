@@ -1,0 +1,158 @@
+/* el-dialog */
+.el-dialog {
+  .el-dialog__header {
+    padding: 15px 20px;
+    margin: 0;
+
+    .el-dialog__title {
+      font-size: 17px;
+    }
+  }
+}
+
+/* 重置滚动条样式 */
+.el-scrollbar__bar {
+  width: 4px !important;
+  opacity: 0.3;
+}
+
+/* 设置 notification、message 层级在 loading 之上 */
+.el-message,
+.el-notification {
+  z-index: 2058 !important;
+}
+
+/* el-alert */
+.el-alert {
+  border: 1px solid;
+}
+
+/* el-drawer */
+.el-drawer {
+  .el-drawer__header {
+    padding: 16px 20px;
+    margin-bottom: 0;
+
+    span {
+      font-size: 18px;
+      color: var(--el-text-color-primary) !important;
+    }
+  }
+
+  .el-drawer__body {
+    padding-top: 0;
+  }
+
+  // drawer-form 中存在两列 form-item 样式
+  .drawer-multiColumn-form {
+    display: flex;
+    flex-wrap: wrap;
+
+    .el-form-item {
+      width: 47%;
+
+      &:nth-child(2n-1) {
+        margin-right: 5%;
+      }
+    }
+  }
+}
+
+/* el-table 组件大小 */
+.el-table--small {
+  .el-table__header th {
+    height: 40px !important;
+    font-size: 14px !important;
+  }
+
+  .el-table__row {
+    height: 40px !important;
+    font-size: 13px !important;
+  }
+}
+
+//重置 Message 样式为 Antd 样式
+.el-message.ant {
+  padding: 9px 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: #fff;
+  box-shadow:
+    0 6px 16px 0 rgba(0, 0, 0, 0.08),
+    0 3px 6px -4px rgba(0, 0, 0, 0.12),
+    0 9px 28px 8px rgba(0, 0, 0, 0.05);
+}
+.dark .el-message.ant {
+  background: #1f1f1f;
+}
+
+//隐藏颜色选择器清空按钮
+.el-color-picker__panel .el-color-dropdown__btns .is-text {
+  display: none !important;
+}
+// .el-overlay{
+//   backdrop-filter: blur(1px);
+// }
+@mixin item-bg($color) {
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+    width: 94%;
+    height: 80%;
+    content: '';
+    background-color: $color !important;
+  }
+}
+
+/* 横向布局 */
+.menu-card {
+  .el-container
+    .el-header
+    .el-menu
+    .el-menu--horizontal
+    .el-sub-menu.is-active {
+    background-color: transparent !important;
+    border-bottom-color: transparent !important;
+    .el-sub-menu__title {
+      border-bottom-color: transparent !important;
+    }
+  }
+  .el-popper .el-menu--horizontal .el-menu {
+    .el-menu-item {
+      & > * {
+        z-index: 1;
+      }
+      background-color: transparent !important;
+      &:hover {
+        @include item-bg(var(--el-color-info-light-9));
+        color: var(--el-text-color-regular);
+      }
+      &.is-active {
+        background-color: transparent !important;
+        @include item-bg(var(--el-menu-hover-bg-color));
+      }
+    }
+    .el-sub-menu {
+      .el-sub-menu__title {
+        & > * {
+          z-index: 1;
+        }
+        &:hover {
+          color: var(--el-text-color-regular) !important;
+          background-color: transparent !important;
+          @include item-bg(var(--el-color-info-light-9));
+        }
+      }
+      //激活的二级菜单标题
+      &.is-active {
+        .el-sub-menu__title {
+          color: var(--el-color-primary) !important;
+          background-color: transparent !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "jsx": "preserve",
+    "lib": ["ESNext", "DOM"],
+    "useDefineForClassFields": true,
+    "baseUrl": "./",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "paths": {
+      "@": ["src"],
+      "@/*": ["src/*"]
+    },
+    "resolveJsonModule": true,
+    "typeRoots": ["./node_modules"],
+    "types": ["vite/client", "element-plus/global", "vite-plugin-svg-icons/client"],
+    "allowJs": true,
+    "strict": false /* Enable all strict type-checking options. */,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "build/**/*.ts",
+    "build/**/*.d.ts",
+    "vite.config.ts",
+    "safeIcons.ts", "types/vite-env.d.ts", "src/views/accel/analysis/flowhot.js"],
+  "exclude": ["node_modules", "dist", "**/*.js", "./mock"]
+}
