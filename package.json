@@ -10,13 +10,13 @@
     "url": "https://github.com/fxzer"
   },
   "license": "MIT",
-  "homepage": "https://github.com/fxzer/x-admin.git",
+  "homepage": "https://github.com/fxzer/x-wan-demo.git",
   "repository": {
     "type": "git",
-    "url": "git@github.com:fxzer/x-admin.git"
+    "url": "git@github.com:fxzer/x-wan-demo.git"
   },
   "bugs": {
-    "url": "https://github.com/fxzer/x-admin.git/issues"
+    "url": "https://github.com/fxzer/x-wan-demo.git/issues"
   },
   "engines": {
     "node": ">=18.0.0"

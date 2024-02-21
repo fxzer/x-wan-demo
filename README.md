@@ -4,11 +4,11 @@
 <img src="./public/logo.svg" style="width:100px;" />
 </p>
 
-<h1 align="center">X-ADMIN</h1>
+<h1 align="center">x-wan-demo</h1>
 
 ### 介绍 📖
 
-x-admin 一款基于[Geeker-Admin](https://github.com/HalseySpicy/Geeker-Admin)改造的后台框架。
+x-wan-demo 一款基于[Geeker-Admin](https://github.com/HalseySpicy/Geeker-Admin)改造的后台框架。
 <br>
 使用 Vue3.3、TypeScript、Vite4、Pinia、Element-Plus，<span style="color:green">UnoCss</span> 等目前最新技术栈开发。
 
@@ -18,8 +18,8 @@ x-admin 一款基于[Geeker-Admin](https://github.com/HalseySpicy/Geeker-Admin)�
 
 ### 代码仓库 ⭐
 
-- Gitee：https://gitee.com/fxzer/x-admin.git
-- GitHub：https://github.com/fxzer/x-admin.git
+- Gitee：https://gitee.com/fxzer/x-wan-demo.git
+- GitHub：https://github.com/fxzer/x-wan-demo.git
 
 ### 项目文档 📚
 
@@ -55,9 +55,9 @@ x-admin 一款基于[Geeker-Admin](https://github.com/HalseySpicy/Geeker-Admin)�
 
 ```text
 # Gitee
-git clone https://gitee.com/fxzer/x-admin.git
+git clone https://gitee.com/fxzer/x-wan-demo.git
 # GitHub
-git clone https://github.com/fxzer/x-admin.git
+git clone https://github.com/fxzer/x-wan-demo.git
 ```
 
 - **Install：**
@@ -109,7 +109,7 @@ git cz
 ### 目录说明 📚
 
 ```text
-x-admin
+x-wan-demo
 ```
 
 ### 浏览器支持 🌎
