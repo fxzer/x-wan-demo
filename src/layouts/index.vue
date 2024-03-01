@@ -19,6 +19,7 @@ const LayoutComponents: Record<LayoutType, Component> = {
 
 const globalStore = useGlobalStore()
 const { layout, settingsVisible } = storeToRefs(globalStore)
+console.log('[ layout ]-22', layout)
 </script>
 
 <template>

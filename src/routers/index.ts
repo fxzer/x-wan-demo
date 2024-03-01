@@ -30,6 +30,7 @@ export async function setupRouter(app: App) {
   setupRouterGuard(router)
   app.use(router)
   await router.isReady()
+  console.log('[ router ]-33', router.getRoutes())
 }
 
 export default router
