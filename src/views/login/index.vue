@@ -14,7 +14,7 @@ import SwitchDark from '@/components/SwitchDark/index.vue'
         <div class="login-logo">
           <img class="login-icon" src="/logo.svg" alt="">
           <h2 class="logo-text">
-            x-wan-demo
+            FUSIONWAN
           </h2>
         </div>
         <LoginForm />

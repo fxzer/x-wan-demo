@@ -51,7 +51,7 @@ function login(formEl: FormInstance | undefined) {
       router.push(HOME_URL)
       ElNotification({
         title: getTimeState(),
-        message: '欢迎登录 x-wan-demo',
+        message: '欢迎登录 FUSIONWAN',
         type: 'success',
         duration: 300,
       })
